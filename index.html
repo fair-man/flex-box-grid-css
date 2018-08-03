@@ -1,0 +1,170 @@
+<html lang="en"><head><link href="flex-grid-css.css" rel="stylesheet"></head><head>
+    <meta charset="UTF-8">
+    <title>FlexBox grid</title>
+    <style>
+        .box-red {
+            background-color: crimson;
+        }
+        .margin-8 {
+            margin: 8px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+<body>
+<div class="margin-8">
+    <h1>Flexbox grid css</h1>
+</div>
+<div class="margin-8">
+    <div>
+        <h3>Ширина колонок по размеру содержимого. Базовая функциональность</h3>
+    </div>
+    <div>
+        <h5>.grid .grid__box</h5>
+    </div>
+    <div class="grid">
+        <div class="grid__box">
+            <div class="box-red padding-4">#</div>
+        </div>
+        <div class="grid__box">
+            <div class="box-red padding-4">##</div>
+        </div>
+        <div class="grid__box">
+            <div class="box-red padding-4">###</div>
+        </div>
+        <div class="grid__box">
+            <div class="box-red padding-4">####</div>
+        </div>
+    </div>
+</div>
+<div class="margin-8">
+    <div>
+        <h3>Авто ширина колонок</h3>
+    </div>
+    <div>
+        <h5>.grid .grid__box .grid__box--size-auto</h5>
+    </div>
+    <div class="grid">
+        <div class="grid__box grid__box--size-auto">
+            <div class="box-red padding-4">#</div>
+        </div>
+        <div class="grid__box grid__box--size-auto">
+            <div class="box-red padding-4">##</div>
+        </div>
+        <div class="grid__box grid__box--size-auto">
+            <div class="box-red padding-4">###</div>
+        </div>
+        <div class="grid__box grid__box--size-auto">
+            <div class="box-red padding-4">####</div>
+        </div>
+    </div>
+</div>
+<div class="margin-8">
+    <div>
+        <h3>Колонки с фиксированными размерами</h3>
+    </div>
+    <div>
+        <h5>.grid .grid__box .grid__box--size-{размер}</h5>
+    </div>
+    <div class="grid">
+        <div class="grid__box grid__box--size-1">
+            <div class="box-red padding-4">1</div>
+        </div>
+        <div class="grid__box grid__box--size-11">
+            <div class="box-red padding-4">11</div>
+        </div>
+        <div class="grid__box grid__box--size-2">
+            <div class="box-red padding-4">2</div>
+        </div>
+        <div class="grid__box grid__box--size-10">
+            <div class="box-red padding-4">10</div>
+        </div>
+        <div class="grid__box grid__box--size-3">
+            <div class="box-red padding-4">3</div>
+        </div>
+        <div class="grid__box grid__box--size-9">
+            <div class="box-red padding-4">9</div>
+        </div>
+        <div class="grid__box grid__box--size-4">
+            <div class="box-red padding-4">4</div>
+        </div>
+        <div class="grid__box grid__box--size-8">
+            <div class="box-red padding-4">8</div>
+        </div>
+        <div class="grid__box grid__box--size-5">
+            <div class="box-red padding-4">5</div>
+        </div>
+        <div class="grid__box grid__box--size-7">
+            <div class="box-red padding-4">7</div>
+        </div>
+        <div class="grid__box grid__box--size-6">
+            <div class="box-red padding-4">6</div>
+        </div>
+        <div class="grid__box grid__box--size-6">
+            <div class="box-red padding-4">6</div>
+        </div>
+        <div class="grid__box grid__box--size-4">
+            <div class="box-red padding-4">4</div>
+        </div>
+        <div class="grid__box grid__box--size-4">
+            <div class="box-red padding-4">4</div>
+        </div>
+        <div class="grid__box grid__box--size-4">
+            <div class="box-red padding-4">4</div>
+        </div>
+        <div class="grid__box grid__box--size-3">
+            <div class="box-red padding-4">3</div>
+        </div>
+        <div class="grid__box grid__box--size-3">
+            <div class="box-red padding-4">3</div>
+        </div>
+        <div class="grid__box grid__box--size-3">
+            <div class="box-red padding-4">3</div>
+        </div>
+        <div class="grid__box grid__box--size-3">
+            <div class="box-red padding-4">3</div>
+        </div>
+    </div>
+</div>
+<div class="margin-8">
+    <div>
+        <h3>Выравнивание колонок по левому, правому краю</h3>
+    </div>
+    <div>
+        <h5>.grid .grid__box .grid__box--pull-left .grid__box--pull-right</h5>
+    </div>
+    <div class="grid">
+        <div class="grid__box grid__box--size-2 grid__box--pull-left">
+            <div class="box-red padding-4">##</div>
+        </div>
+        <div class="grid__box grid__box--size-6 grid__box--pull-right">
+            <div class="box-red padding-4">######</div>
+        </div>
+    </div>
+</div>
+<div class="margin-8">
+    <div>
+        <h3>Отступы между колонками</h3>
+    </div>
+    <div>
+        <h5>.grid--gap-4</h5>
+    </div>
+    <div class="grid grid--gap-4">
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+    </div>
+    <div>
+        <h5>.grid--gap-24</h5>
+    </div>
+    <div class="grid grid--gap-24">
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+        <div class="grid__box grid__box--size-3"><div class="box-red padding-4">###</div></div>
+    </div>
+</div>
+
+</body></html>

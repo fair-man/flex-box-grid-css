@@ -1,7 +1,7 @@
 {
   "name": "flex-grid-css",
   "version": "1.0.0",
-  "description": "Flexbox grid css",
+  "description": "Flexbox grid",
   "main": "",
   "dependencies": {},
   "devDependencies": {
@@ -31,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fair-man/flexbox-grid-css.git"
+    "url": "git+https://github.com/fair-man/flex-grid-css.git"
   },
-  "author": "Ruslan Tukalenko <ruslan.tukalenko@gmail.com>",
+  "author": "Ruslan Tukalenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fair-man/flexbox-grid-css/issues"
+    "url": "https://github.com/fair-man/flex-grid-css/issues"
   },
-  "homepage": "https://github.com/fair-man/flexbox-grid-css#readme"
+  "homepage": "https://github.com/fair-man/flex-grid-css#readme"
 }
