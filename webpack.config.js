@@ -32,7 +32,7 @@ let config = {
   entry: './src/main.scss',
   output: {
     path: path.resolve(__dirname),
-    filename: 'flex-grid-css.css'
+    filename: 'flex-box-grid-css.css'
   },
   module: {
     rules: []
@@ -70,7 +70,7 @@ module.exports = (env, args) => {
 
   config.plugins.push(
     new ExtractTextPlugin({
-      filename: 'flex-grid-css.css'
+      filename: 'flex-box-grid-css.css'
     })
   );
 
