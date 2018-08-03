@@ -31,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fair-man/flex-grid-css.git"
+    "url": "git+https://github.com/fair-man/flex-box-grid-css.git"
   },
   "author": "Ruslan Tukalenko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fair-man/flex-grid-css/issues"
+    "url": "https://github.com/fair-man/flex-box-grid-css/issues"
   },
-  "homepage": "https://github.com/fair-man/flex-grid-css#readme"
+  "homepage": "https://github.com/fair-man/flex-box-grid-css#readme"
 }
