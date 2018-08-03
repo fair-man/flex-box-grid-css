@@ -1,0 +1,64 @@
+.grid {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  margin: -$grid-gap-base / 2 * 1px;
+  min-width: 0;
+
+  &--inline {
+    display: inline-flex;
+  }
+
+  @each $attr in $grid-container-attrs {
+    @each $key, $values in $attr {
+      @each $value in $values {
+        &--#{$key}-#{$value} {
+          flex-#{$key}: $value;
+        }
+      }
+    }
+  }
+
+  @each $gap in $grid-gap {
+    &--gap-#{$gap} {
+      margin: $gap / -2 * 1px;
+
+      .grid__box {
+        padding: $gap / 2 * 1px;
+      }
+    }
+  }
+}
+
+.grid__box {
+  padding: $grid-gap-base / 2 * 1px;
+
+  &--size-auto {
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  &--pull-right {
+    margin-left: auto;
+  }
+
+  &--pull-left {
+    margin-right: auto;
+  }
+
+  @for $i from 1 through $columns {
+    &--size-#{$i} {
+      max-width: 100 / $columns * $i * 1%;
+      flex: 0 0 100 / $columns * $i * 1%;
+    }
+  }
+
+  @each $align-self in $grid-align-selfs {
+    &--align-self-#{$align-self} {
+      align-self: $align-self;
+    }
+  }
+}

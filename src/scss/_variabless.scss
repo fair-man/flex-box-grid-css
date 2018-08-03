@@ -1,0 +1,32 @@
+$columns: 12;
+
+$indents: (0, 4, 8, 16, 24, 32);
+$directions: (top, right, bottom, left);
+
+$grid-gap-base: 16;
+$grid-gap: (0, 4, 8, 16, 24, 32);
+
+$grid-directions: (row, row-reverse, column, column-reverse);
+$grid-wraps: (nowrap, wrap, wrap-reverse);
+$grid-justify-contents: (flex-start, flex-end, center, space-between, space-around, space-evenly);
+$grid-align-items: (flex-start, flex-end, center, baseline, stretch);
+$grid-align-contents: (flex-start, flex-end, center, space-between, space-around, stretch);
+$grid-align-selfs: (auto, flex-start, flex-end, center, baseline, stretch);
+
+$grid-container-attrs: (
+  (
+    direction: $grid-directions,
+  ),
+  (
+    wrap: $grid-wraps,
+  ),
+  (
+    justify-content: $grid-justify-contents,
+  ),
+  (
+    align-items: $grid-align-contents,
+  ),
+  (
+    align-self: $grid-align-selfs,
+  )
+)
