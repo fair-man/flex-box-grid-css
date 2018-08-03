@@ -6,6 +6,8 @@ $directions: (top, right, bottom, left);
 $grid-gap-base: 16;
 $grid-gap: (0, 4, 8, 16, 24, 32);
 
+$grid-breakpoints: (s: 640px, m: 1024px, l: 1200px, xl: 1440px);
+
 $grid-directions: (row, row-reverse, column, column-reverse);
 $grid-wraps: (nowrap, wrap, wrap-reverse);
 $grid-justify-contents: (flex-start, flex-end, center, space-between, space-around, space-evenly);
@@ -29,4 +31,4 @@ $grid-container-attrs: (
   (
     align-self: $grid-align-selfs,
   )
-)
+);
