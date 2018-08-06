@@ -12,12 +12,10 @@
     display: inline-flex;
   }
 
-  @each $attr in $grid-container-attrs {
-    @each $key, $values in $attr {
-      @each $value in $values {
-        &--#{$key}-#{$value} {
-          flex-#{$key}: $value;
-        }
+  @each $key, $values in $grid-container-attrs {
+    @each $value in $values {
+      &--#{$key}-#{$value} {
+        flex-#{$key}: $value;
       }
     }
   }
@@ -59,6 +57,35 @@
   @each $align-self in $grid-align-selfs {
     &--align-self-#{$align-self} {
       align-self: $align-self;
+    }
+  }
+}
+
+@each $breakName, $breakSize in $grid-breakpoints {
+  @each $gap in $grid-gap {
+    @media all and (min-width: $breakSize) {
+      .grid--gap-#{$breakName}-#{$gap} {
+        margin: $gap / -2 * 1px;
+
+        .grid__box {
+          padding: $gap / 2 * 1px;
+        }
+      }
+
+      @each $key, $values in $grid-container-attrs {
+        @each $value in $values {
+          .grid--#{$key}-#{$value}-#{$breakName} {
+            flex-#{$key}: $value;
+          }
+        }
+      }
+
+      @for $i from 1 through $columns {
+        .grid__box--size-#{$breakName}-#{$i} {
+          max-width: 100 / $columns * $i * 1%;
+          flex: 0 0 100 / $columns * $i * 1%;
+        }
+      }
     }
   }
 }
