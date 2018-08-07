@@ -14,8 +14,22 @@
 
   @each $key, $values in $grid-container-attrs {
     @each $value in $values {
-      &--#{$key}-#{$value} {
+      &--#{$value} {
         flex-#{$key}: $value;
+      }
+    }
+  }
+
+  @each $key, $values in $grid-containter-va {
+    @each $value in $values {
+      @if ($key == justify-content) {
+        &--va-#{$value} {
+          #{$key}: $value;
+        }
+      } @else {
+        &--ha-#{$value} {
+          #{$key}: $value;
+        }
       }
     }
   }
