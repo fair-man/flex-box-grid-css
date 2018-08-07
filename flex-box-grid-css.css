@@ -24,29 +24,29 @@
     flex-wrap: wrap; }
   .grid--wrap-reverse {
     flex-wrap: wrap-reverse; }
-  .grid--va-flex-start {
-    justify-content: flex-start; }
-  .grid--va-flex-end {
-    justify-content: flex-end; }
-  .grid--va-center {
-    justify-content: center; }
-  .grid--va-space-between {
-    justify-content: space-between; }
-  .grid--va-space-around {
-    justify-content: space-around; }
-  .grid--va-space-evenly {
-    justify-content: space-evenly; }
   .grid--ha-flex-start {
-    align-items: flex-start; }
+    justify-content: flex-start; }
   .grid--ha-flex-end {
-    align-items: flex-end; }
+    justify-content: flex-end; }
   .grid--ha-center {
-    align-items: center; }
+    justify-content: center; }
   .grid--ha-space-between {
-    align-items: space-between; }
+    justify-content: space-between; }
   .grid--ha-space-around {
+    justify-content: space-around; }
+  .grid--ha-space-evenly {
+    justify-content: space-evenly; }
+  .grid--va-flex-start {
+    align-items: flex-start; }
+  .grid--va-flex-end {
+    align-items: flex-end; }
+  .grid--va-center {
+    align-items: center; }
+  .grid--va-space-between {
+    align-items: space-between; }
+  .grid--va-space-around {
     align-items: space-around; }
-  .grid--ha-stretch {
+  .grid--va-stretch {
     align-items: stretch; }
   .grid--gap-0 {
     margin: 0px; }
