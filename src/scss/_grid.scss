@@ -23,11 +23,11 @@
   @each $key, $values in $grid-containter-va {
     @each $value in $values {
       @if ($key == justify-content) {
-        &--va-#{$value} {
+        &--ha-#{$value} {
           #{$key}: $value;
         }
       } @else {
-        &--ha-#{$value} {
+        &--va-#{$value} {
           #{$key}: $value;
         }
       }
